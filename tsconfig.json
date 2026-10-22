@@ -22,10 +22,7 @@
       ]
     },
     "allowImportingTsExtensions": true,
-    "noEmit": true, 
-    "outDir": "./dist",
-    "rootDir": "./src",
-    "strict": true
+    "noEmit": true
   },
   "exclude": ["dist"]
 }

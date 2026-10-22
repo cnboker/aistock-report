@@ -11,7 +11,6 @@ export default defineConfig(() => {
         '@': path.resolve(__dirname, '.'),
       },
     },
-    plugins: [react()],
     base: './', //
     server: {
       // HMR is disabled in AI Studio via DISABLE_HMR env var.
