@@ -9,12 +9,13 @@ import { ExecutiveSummaryTab } from './components/ExecutiveSummaryTab';
 import { PipelineArchitectureTab } from './components/PipelineArchitectureTab';
 import { DeepDiagnosticsTab } from './components/DeepDiagnosticsTab';
 import { PicksInspectorTab } from './components/PicksInspectorTab';
+import { InvestmentPitchTab } from './components/InvestmentPitchTab';
 import { ImprovementPlanTab } from './components/ImprovementPlanTab';
 import { RawLogTab } from './components/RawLogTab';
 import { ReportModal } from './components/ReportModal';
 
 export default function App() {
-  const [activeTab, setActiveTab] = useState<string>('summary');
+  const [activeTab, setActiveTab] = useState<string>('pitch');
   const [isReportModalOpen, setIsReportModalOpen] = useState<boolean>(false);
 
   return (
@@ -28,6 +29,7 @@ export default function App() {
 
       {/* Main Content Area */}
       <main className="flex-1 max-w-7xl w-full mx-auto px-4 sm:px-6 lg:px-8 py-6 sm:py-8">
+        {activeTab === 'pitch' && <InvestmentPitchTab />}
         {activeTab === 'summary' && <ExecutiveSummaryTab />}
         {activeTab === 'pipeline' && <PipelineArchitectureTab />}
         {activeTab === 'diagnostics' && <DeepDiagnosticsTab />}

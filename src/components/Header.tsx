@@ -87,6 +87,7 @@ export const Header: React.FC<HeaderProps> = ({ activeTab, setActiveTab, onExpor
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex overflow-x-auto border-t border-slate-900 space-x-1 scrollbar-none">
         {[
           { id: 'summary', label: '全景评估与梯队定位' },
+          { id: 'pitch', label: '★ 项目投资推荐书 (Pitch Memo)' },
           { id: 'pipeline', label: '流水线与双Alpha架构' },
           { id: 'diagnostics', label: '深度病灶与稳定性归因' },
           { id: 'picks', label: '选股截面与实盘穿透' },
